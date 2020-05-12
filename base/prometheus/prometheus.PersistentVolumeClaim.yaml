@@ -9,5 +9,5 @@ spec:
   - ReadWriteOnce
   resources:
     requests:
-      storage: 200Gi
-  storageClassName: sourcegraph
+      storage: 10Gi
+  storageClassName: dynamic-block-ceph

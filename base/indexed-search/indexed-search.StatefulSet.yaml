@@ -35,11 +35,11 @@ spec:
           periodSeconds: 1
         resources:
           limits:
-            cpu: "2"
-            memory: 4G
+            cpu: "3"
+            memory: 26G
           requests:
-            cpu: 500m
-            memory: 2G
+            cpu: "1"
+            memory: 24G
         volumeMounts:
         - mountPath: /data
           name: data
@@ -80,5 +80,5 @@ spec:
         requests:
           # The size of disk to used for search indexes.
           # This should typically be gitserver disk size multipled by the number of gitserver shards.
-          storage: 200Gi
+          storage: 100Gi
       storageClassName: sourcegraph
